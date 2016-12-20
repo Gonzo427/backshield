@@ -1,0 +1,137 @@
+/*
+Theme Name: Backshield theme
+Author: Tiffany Sevareid
+Author URI: http://tiffanysevareid.com/
+License: GNU General Public License
+
+*/
+/*========= COLORS ===========*/
+$red: rgba(219, 84, 97, 1);
+$brown: rgba(86, 86, 82, 1);
+$green: rgba(138, 162, 158, 1);
+$blue: rgba(61, 84, 103, 1);
+$white: rgba(241, 237, 238, 1);
+$light-grey: rgba(211,211,211,1);
+$black: rgba(29,29,27, 1);
+$purple: #A6B1E1;
+$lavendar: #DCD6F7;
+$light-green:#D6E5E3;
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;font:inherit;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+/*======= GLOBAL STYLES ========*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+
+h1,h2,h3{
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+	color: $blue;
+
+}
+
+
+
+/*======== CLEARFIX =========
+extend as needed:  
+.classname {
+  ...
+  @extend .clearfix;
+}
+*/
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/*========== HEADER ============*/
+
+#header{
+	position: fixed;
+	width: 100%;
+	top:0px; 
+	margin:auto; 
+	z-index:100000;
+	height: 120px;
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid $light-grey;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+#header.shrink {
+    height: 80px;
+}
+#branding{
+	display: inline-block;
+	width: 200px;
+
+	h1{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 1.5em;
+
+		a{
+			text-decoration: none;
+			color: $blue;
+		}
+	}
+}
+
+/*=========== NAV ===============*/
+nav#menu{
+	display: inline-block;
+}
+.menu{
+	li{
+		display: inline; 
+		font-size: .85em;
+    	padding: 0px 15px;
+
+    	a{
+    		text-decoration: none;
+    		color: $blue;
+    		transition: text-decoration 2s	;
+
+    		&:hover{
+    			text-decoration: underline;
+    		}
+    	}
+	}
+}
+
+
+/*========== CONTENT ========*/
+#container{
+	background: $white;
+	margin: 85px auto;
+}
+.home_section{
+	padding: 80px 0;
+	min-height: 300px;
+}
+.color-wrapper {
+  transition: background .2s ease;
+}
+/*#part_1{
+	background: $red;
+}
+#part_2{
+	background: $green;
+}
+#part_3{
+	background: $blue;
+}*/
+
