@@ -1,0 +1,92 @@
+/*========== HEADER ============*/
+
+#header{
+	position: fixed;
+	width: 100%;
+	top:0px; 
+	margin:auto; 
+	z-index:100000;
+	height: 180px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: all 0.3s;
+    padding-top: 60px;
+
+    #branding{
+		margin-top: -20px;
+		width: 100%;
+		#logo{
+			margin: 0 auto; 
+			background: url(images/bs-logo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			padding-top: 60%;
+			max-width: 453px;
+			width: 100%;
+
+			img{
+				margin-top:15px;
+				-webkit-animation-delay: 2s;
+	    		animation-delay: 2s;
+			}
+		}
+
+		h1{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 1.5em;
+
+			a{
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+	}
+}
+
+#header.scrolled {
+    height: 100px;
+    padding-top: 40px;
+    background: #222;
+
+    #branding{
+    	#logo{
+    		width: 25%;
+    		background: url(images/BackShield-Logo-Reversed.svg) no-repeat;
+    		
+    		a{
+    			
+    		}
+    	}
+    }
+
+}
+
+
+/*=========== NAV ===============*/
+nav#menu{
+	display: none;
+}
+
+.scrolled nav#menu{
+	display: inline-block;
+}
+.menu{
+	li{
+		display: inline; 
+		font-size: .85em;
+    	padding: 0px 15px;
+
+    	a{
+    		text-decoration: none;
+    		color: $blue;
+    		transition: text-decoration 2s	;
+
+    		&:hover{
+    			text-decoration: underline;
+    		}
+    	}
+	}
+}

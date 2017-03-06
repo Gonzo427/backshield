@@ -1,8 +1,4 @@
 jQuery(document).ready(function($) {
-
-    /* delay logo */
-
-
  /* shrink header */
   var shrinkHeader = 100;
   $(window).scroll(function() {
@@ -21,54 +17,13 @@ jQuery(document).ready(function($) {
     }
 
 
-/* scrolling bg change */
-/*var $target = $('.slide-wrap');
-inView('.slide').on('exit', function(el){
-  var bgImg = $(el).attr('data-img-src');
-  $target.css('background', 'url('+bgImg+')' );
+/* scrolling bg-color change */
+var $target = $('.color-wrapper');
+inView('.home_section').on('enter', function(el){
+  var color = $(el).attr('data-background-color');
+  $target.css('background-color', color );
 });
-*/
 
-
-
-/* scrollMagic vertical slides */
-
- 
-    // Init ScrollMagic
-    var controller = new ScrollMagic.Controller();
-    var ourScene = new ScrollMagic.Scene({
-      triggerElement: '#slide-2',
-      triggerHook: 1,
-      duration: '100%'
-    })
-    .setClassToggle('#slide-2', 'fadeIn')
-    .addIndicators({
-      name: 'fade scene',
-      colorTrigger: 'white',
-      colorStart: 'pink'
-    })
-    .addTo(controller);
-    var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: 'onLeave'
-      }
-    });
-
-    // get all slides
-   /* var slides = document.querySelectorAll(".slide");
-
-    // create scene for every slide
-    for (var i=0; i<slides.length; i++) {
-      new ScrollMagic.Scene({
-          triggerElement: slides[i]
-        })
-        .setPin(slides[i])
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    }*/
-
- 
- 
 
 
 /*Video bg */
