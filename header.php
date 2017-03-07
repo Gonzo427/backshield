@@ -8,15 +8,21 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed grid">
-
+ 	
 <header id="header" role="banner">
 	<div class="row">
-<div class="c12">
+
 <section id="branding">
-	<div id="logo"></div>
-<div id="site-title"><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?></div>
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home">
+		<div id="logo"  class="animated slideInDown"></div>
+		<div class="black-bg animated slideInDown">
+			<div id="sm-logo"  ></div>
+		</div>
+	</a>
+
 
 </section>
+<div class="c12">
 <nav id="menu" role="navigation">
 	<!--<div id="search">
 	<?php get_search_form(); ?>

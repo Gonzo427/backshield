@@ -87,18 +87,19 @@ extend as needed:
 #header {
   position: fixed;
   width: 100%;
+  height: 120px;
   top: 0px;
   margin: auto;
   z-index: 100000;
-  height: 180px;
   overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: all 0.3s;
-  padding-top: 60px; }
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
   #header #branding {
-    margin-top: -20px;
     width: 100%; }
+    #header #branding .black-bg {
+      margin-top: -40px;
+      display: none; }
     #header #branding #logo {
       margin: 0 auto;
       background: url(images/bs-logo.png);
@@ -107,11 +108,8 @@ extend as needed:
       display: block;
       padding-top: 60%;
       max-width: 453px;
-      width: 100%; }
-      #header #branding #logo img {
-        margin-top: 15px;
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s; }
+      width: 100%;
+      margin-top: 25px; }
     #header #branding h1 {
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
@@ -120,13 +118,23 @@ extend as needed:
         text-decoration: none;
         color: #3d5467; }
 
-#header.scrolled {
-  height: 100px;
-  padding-top: 40px;
-  background: #222; }
-  #header.scrolled #branding #logo {
+#header.scrolled #branding #logo {
+  display: none; }
+#header.scrolled #branding .black-bg {
+  display: block;
+  height: 130px;
+  width: 100%;
+  padding-top: 65px;
+  background: #222;
+  transition: all 2s; }
+  #header.scrolled #branding .black-bg #sm-logo {
     width: 25%;
-    background: url(images/BackShield-Logo-Reversed.svg) no-repeat; }
+    background: url(images/BackShield-Logo-Reversed.svg) no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    height: 52px; }
 
 /*=========== NAV ===============*/
 nav#menu {
@@ -153,9 +161,30 @@ nav#menu {
   height: 100%;
   overflow: hidden; }
 
-.slide {
-  height: 100vh; }
+.fadeInBlock {
+  opacity: 0; }
 
+.slide {
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.slide-wrap {
+  /*background: url(images/vert-slide-1.jpg) no-repeat center center;
+transition: background .2s ease;
+  background-attachment:fixed;
+  background-size:cover;*/ }
+
+/*#slide-1 img,#slide-2 img,#slide-3 img,#slide-4 img {
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+
+}*/
 #slide-1 {
   background: url(images/vert-slide-1.jpg) no-repeat center center;
   background-size: cover; }
@@ -216,14 +245,19 @@ nav#menu {
     position: relative;
     display: block;
     width: 31%; }
-    .orange-triangle span h1 {
+    .orange-triangle span h1, .orange-triangle span h2 {
       color: white;
       font-family: 'Eurostile LT Pro', sans-serif;
-      font-size: 18px;
+      font-size: 1.125em;
       text-transform: uppercase;
       font-weight: 100; }
-      .orange-triangle span h1 strong {
+      .orange-triangle span h1 strong, .orange-triangle span h2 strong {
         font-weight: 700; }
+    .orange-triangle span h2 {
+      font-size: 2em; }
+    .orange-triangle span p {
+      font-size: .8em;
+      font-weight: 100; }
 
 .blue-triangle {
   background: url(images/buy-now.png);
@@ -262,9 +296,6 @@ nav#menu {
 /*========== CONTENT ========*/
 .home_section {
   padding: 80px 0; }
-
-.slide-wrap {
-  transition: background .2s ease; }
 
 /*#part_1{
 	background: $red;

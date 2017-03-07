@@ -21,23 +21,31 @@
 		<!--<div class="video-bg" ><?php //the_field('video_background'); ?></div>-->
 		<div class="cta">
 					<div class="orange-triangle animated fadeInLeft">
-						<span><h1><strong>Pain Free<srong> Driving</h1>
-					    <p>By Design</p>
-					    <p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
+						<span><h1><strong>Pain Free</strong> Driving</h1>
+						    <h2>By Design</h2>
+						    <p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
 						</span>
 					</div>
 				
 					 <div class="blue-triangle animated  fadeInDown"></div>
 		</div><!--/cta-->
 				
-		<div class="slide-wrap">
-			<div id="slide-1" class="slide animated" data-img-src="wp-content/themes/backshield/images/vert-slide-1.jpg">
-				
-			</div><!-- /slide -->
+		<div class="slide-wrap slide">
+			<div id="slide-1" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-1.jpg">
+			<!--	<img class="animated" src="<?php echo //THEME_IMG_PATH; ?>/vert-slide-1.jpg">-->
+			</div>
+			<!-- /slide -->
 		
-			<div id="slide-2" class="slide animated" data-img-src="wp-content/themes/backshield/images/vert-slide-2.jpg"></div>
-			<div id="slide-3" class="slide animated" data-img-src="wp-content/themes/backshield/images/vert-slide-3.jpg"></div>
-			<div id="slide-4" class="slide animated" data-img-src="wp-content/themes/backshield/images/vert-slide-4.jpg"></div>
+			<div id="slide-2" class=" animated " data-img-src="wp-content/themes/backshield/images/vert-slide-2.jpg">
+				<!--		<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-2.jpg">-->
+			</div>
+			<div id="slide-3" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-3.jpg">
+				<!--<img class="animated slideInUp" src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-3.jpg">-->
+			</div>
+			<div id="slide-4" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-4.jpg">
+				<!--<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-4.jpg">-->
+			</div>
+
 		</div><!-- /slide-wrap-->
 	
 		<div class="entry-links"><div class="grid"><div class="c12"><?php wp_link_pages(); ?></div></div></div>

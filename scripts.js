@@ -10,16 +10,58 @@ jQuery(document).ready(function($) {
         
        if ( scroll >= shrinkHeader ) {
            $('#header').addClass('scrolled');
+
         }
         else {
             $('#header').removeClass('scrolled');
+
         }
+
+       /*  if (scroll > 150){
+
+           $('#slide-2 img').addClass('fadeIn')
+        }
+        else {$('#slide-2 img').fadeOut('slow')};
+
+          if (scroll > 300) {
+        $('#slide-3 img').fadeIn({});
+    }
+    else {$('#slide-3 img').fadeOut('slow')};
+    
+    if (scroll > 450) {
+        $('#slide-4 img').fadeIn({});
+    }
+    else {$('#slide-4 img').fadeOut('slow')};*/
+
+
     });
 
    function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
     }
 
+
+
+
+    //fade images on scroll
+    /*var y = $(this).scrollTop();
+    if (y > 250) {
+        $('#slide-2 img').fadeIn({});
+    }
+    else {$('#slide-2 img').fadeOut('slow')};
+    
+    if (y > 300) {
+        $('#slide-3 img').fadeIn({});
+    }
+    else {$('#slide-3 img').fadeOut('slow')};
+    
+    if (y > 450) {
+        $('#slide-4 img').fadeIn({});
+    }
+    else {$('#slide-4 img').fadeOut('slow')};
+
+
+*/
 
 /* scrolling bg change */
 /*var $target = $('.slide-wrap');
@@ -35,7 +77,7 @@ inView('.slide').on('exit', function(el){
 
  
     // Init ScrollMagic
-    var controller = new ScrollMagic.Controller();
+  /*var controller = new ScrollMagic.Controller();
     var ourScene = new ScrollMagic.Scene({
       triggerElement: '#slide-2',
       triggerHook: 1,
@@ -52,10 +94,10 @@ inView('.slide').on('exit', function(el){
       globalSceneOptions: {
         triggerHook: 'onLeave'
       }
-    });
+    });*/
 
     // get all slides
-   /* var slides = document.querySelectorAll(".slide");
+   var slides = document.querySelectorAll(".slide");
 
     // create scene for every slide
     for (var i=0; i<slides.length; i++) {
@@ -65,7 +107,7 @@ inView('.slide').on('exit', function(el){
         .setPin(slides[i])
         .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-    }*/
+    }
 
  
  
