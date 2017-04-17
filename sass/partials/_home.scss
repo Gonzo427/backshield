@@ -1,54 +1,38 @@
+/*========= FADE IN BG IMAGES ===== */
 
+.slide-1-bg, .slide-2-bg, .slide-3-bg, .slide-4-bg, .orange-triangle{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+.slide-1-bg{
+    background:  url('images/vert-slide-1.jpg') center center fixed;
+    background-size:cover;
+    z-index:-2;
+}
+.slide-2-bg{
+  background:  url('images/vert-slide-2.jpg') center center fixed;
+  z-index:-3;
+}
+.slide-3-bg{
+  background:  url('images/vert-slide-3.jpg') center center fixed;
+  z-index:-4;
+}
+.slide-4-bg{
+  background:  url('images/vert-slide-4.jpg') center center fixed;
+  z-index:-5;
+}
+#filler{
+    padding: 400px 0;
+    position: relative;
+    z-index: 2000;
+    background: wheat;
+}
 
 /*========= VERTICAL SLIDESHOW ========*/
-/* full width/height container */
-#slides-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.fadeInBlock {
-    opacity:0;
-}
-.slide{
-    height: 100vh;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-.slide-wrap {
-    /*background: url(images/vert-slide-1.jpg) no-repeat center center;
-  transition: background .2s ease;
-    background-attachment:fixed;
-    background-size:cover;*/
-}
-/*#slide-1 img,#slide-2 img,#slide-3 img,#slide-4 img {
-    position: fixed;
-    width:100%;
-    height:100%;
-    z-index:-1;
-
-}*/
-#slide-1 {
-    background: url(images/vert-slide-1.jpg) no-repeat center center;
-    background-size: cover;
-}
-#slide-2 {
-    background: url(images/vert-slide-2.jpg) no-repeat center center;
-    background-size: cover;
-    
-}
-#slide-3 {
-    background: url(images/vert-slide-3.jpg) no-repeat center center;
-    background-size: cover;
-  
-}
-#slide-4 {
-    background: url(images/vert-slide-4.jpg) no-repeat center center;
-    background-size: cover;
-}
 .cta{
     position: absolute;
     display: flex;
@@ -64,11 +48,12 @@
 .orange-triangle{
     background: url(images/orange-tri.png)no-repeat;
     background-size: cover;
-    bottom: 0;
-    left: 0;
     animation-delay: 1s;
-    height: 50vh;
-    position: fixed;
+    position: fixed; 
+    top:50vh;
+    left:0;
+    z-index: 20;
+  
     span{
         color: white;
         position: relative;
@@ -93,28 +78,6 @@
             font-weight: 100;
         }
     }
-
-    /*width: 20%;
-    height: 0;
-    padding-bottom: 10%;
-    overflow: hidden;
-    position: absolute;
-    span{
-        color:#fff;
-        font-size:1em;
-        position:absolute;
-        top: 20px;
-        left:50px;
-    }
-
-    &:after{
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-right: 800px solid transparent;
-    border-bottom: 500px solid rgba(255,107,0, .5);
-    }*/
 }
 .blue-triangle{
     background: url(images/buy-now.png);
@@ -123,33 +86,7 @@
     position: absolute;
     top:0;
     right: 0;
-   animation-delay: 1s;
-
-    /*width: 0;
-    height: 0;
-    padding-left:10%;
-    padding-top: 10%;
-    overflow: hidden;
-    position: absolute;
-
-     span{
-        color:#fff;
-        font-size:1em;
-        position:absolute;
-        top: 20px;
-        right:50px;
-    }
-
-    &:after{
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        margin-left:-500px;
-        margin-top:-500px;
-        border-left: 500px solid transparent;
-        border-top: 500px solid #219ed0;
-    }*/
+    animation-delay: 1s;
 }
 
 

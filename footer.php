@@ -12,7 +12,11 @@
 </div>
 <?php wp_footer(); ?>
 <script>
-      var s = skrollr.init();
+      var s = skrollr.init({
+      	smoothScrolling: true,
+    	forceHeight: false
+      });
+     
 </script>
 </body>
 </html>

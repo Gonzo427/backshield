@@ -2,15 +2,12 @@
 <?php get_header(); ?>
 	
 			
-<section  class="row" id="content" role="main">
+<section   id="content" role="main">
 	
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>	
 	
-			
-	
-		
 		</article>
 		<section class="entry-content">
 		
@@ -19,40 +16,58 @@
 		</section>-->
 
 		<!--<div class="video-bg" ><?php //the_field('video_background'); ?></div>-->
-		<div class="cta">
-					<div class="orange-triangle animated fadeInLeft">
+			
+
+
+			<div class="content">
+				<div class="cta" data-top="opacity:1;" data-top-bottom="opacity:0;">
+					
+					 <div class="blue-triangle animated fadeInDown"></div>
+				</div><!--/cta-->
+			    <div class="orange-triangle animated fadeInLeft">
 						<span><h1><strong>Pain Free</strong> Driving</h1>
 						    <h2>By Design</h2>
 						    <p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
 						</span>
 					</div>
-				
-					 <div class="blue-triangle animated  fadeInDown"></div>
-		</div><!--/cta-->
-				
-		<div class="slide-wrap slide">
-			<div id="slide-1" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-1.jpg">
-			<!--	<img class="animated" src="<?php echo //THEME_IMG_PATH; ?>/vert-slide-1.jpg">-->
+			    <div class="slide-1">
+
+			    </div>
+			    <div class="slide-2"></div>
+			    <div class="slide-3"></div>
+			    <div class="slide-4"></div>
+
+			    <div class="slide-1-bg" data-0="opacity:1;" data-100p="opacity:0;"></div>
+				<div class="slide-2-bg" data-100p="opacity:1;" data-200p="opacity:0;"></div>
+				<div class="slide-3-bg" data-200p="opacity:1;" data-300p="opacity:0;"></div>
+				<div class="slide-4-bg" data-300p="opacity:1;" data-400p="opacity:0;"></div>
+
+
 			</div>
-			<!-- /slide -->
+				
+		<!--<div class="slide-wrap slide">
+			<div id="slide-1" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-1.jpg">
+				<img class="animated" src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-1.jpg">
+			
 		
 			<div id="slide-2" class=" animated " data-img-src="wp-content/themes/backshield/images/vert-slide-2.jpg">
-				<!--		<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-2.jpg">-->
+				<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-2.jpg">
 			</div>
 			<div id="slide-3" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-3.jpg">
-				<!--<img class="animated slideInUp" src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-3.jpg">-->
+				<img class="animated slideInUp" src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-3.jpg">
 			</div>
 			<div id="slide-4" class=" animated" data-img-src="wp-content/themes/backshield/images/vert-slide-4.jpg">
-				<!--<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-4.jpg">-->
-			</div>
+				<img class="animated slideInUp"  src="<?php //echo THEME_IMG_PATH; ?>/vert-slide-4.jpg">
+			</div>-->
 
-		</div><!-- /slide-wrap-->
+		<!--</div>/slide-wrap-->
 	
-		<div class="entry-links"><div class="grid"><div class="c12"><?php wp_link_pages(); ?></div></div></div>
+		
 		</section>
+		<div id="filler">FILLER</div>
 		
 		<?php endwhile; endif; ?>
-		</div>
+
 
 </section>
 <?php get_footer(); ?>
