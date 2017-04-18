@@ -24,18 +24,36 @@
 					
 					 <div class="blue-triangle animated fadeInDown"></div>
 				</div><!--/cta-->
-			    <div class="orange-triangle animated fadeInLeft">
-						<span><h1><strong>Pain Free</strong> Driving</h1>
-						    <h2>By Design</h2>
-						    <p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
-						</span>
-					</div>
+			    <div class="orange-triangle animated fadeInLeft"></div>
+			   
 			    <div class="slide-1">
-
+			    	<div class="intro animated fadeInLeft"  data-bottom="position:fixed;" data-center-bottom="position:absolute;">
+				    	<h1><strong>Pain Free</strong> Driving</h1>
+						<h2>By Design</h2>
+						<p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
+					</div>
 			    </div>
-			    <div class="slide-2"></div>
-			    <div class="slide-3"></div>
-			    <div class="slide-4"></div>
+			    <div class="slide-2">
+					<div class="intro" data-top="position:fixed;" data-100-top="position:absolute;">
+				    	<h1><strong>Pain Free</strong> Driving</h1>
+						<h2>By Design</h2>
+						<p>BackShield is a donec sed placerat enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ultrices sed nisi quis dignissim.  </p>
+					</div>
+			    </div>
+			    <div class="slide-3">
+			    	<div class="intro">
+				    	<h1><strong>Pain Free</strong> Driving</h1>
+						<h2>By Design</h2>
+						<p>BackShield is a lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id nisi nisi.</p>
+					</div>
+			    </div>
+			    <div class="slide-4">
+			    	<div class="intro">
+				    	<h1><strong>Pain Free</strong> Driving</h1>
+						<h2>By Design</h2>
+						<p>BackShield is a praesent mollis dui nisi, vel aliquet odio iaculis mollis. Cras iaculis hendrerit tellus, vitae ultrices velit semper quis. </p>
+					</div>
+			    </div>
 
 			    <div class="slide-1-bg" data-0="opacity:1;" data-100p="opacity:0;"></div>
 				<div class="slide-2-bg" data-100p="opacity:1;" data-200p="opacity:0;"></div>

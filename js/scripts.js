@@ -1,4 +1,8 @@
 jQuery(document).ready(function($) {
+
+    /* delay logo */
+
+
  /* shrink header */
   var shrinkHeader = 100;
   $(window).scroll(function() {
@@ -10,19 +14,25 @@ jQuery(document).ready(function($) {
         else {
             $('#header').removeClass('scrolled');
         }
+
     });
 
    function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
     }
 
+ 
+  /* FADE IN BACKGROUND IMAGES */
 
-/* scrolling bg-color change */
-var $target = $('.color-wrapper');
-inView('.home_section').on('enter', function(el){
-  var color = $(el).attr('data-background-color');
-  $target.css('background-color', color );
-});
+var maxWidth = $(window).width();
+var maxHeight = $(window).height();
+
+
+    $('.slide-1, .slide-2, .slide-3, .slide-4').css({
+        width: maxWidth,
+        height: maxHeight
+    });
+
 
 
 
@@ -52,9 +62,5 @@ $('.video').prepend(el);
 
 
 
-
 //this is closing brackets for document.ready
 });
- 
-
-
