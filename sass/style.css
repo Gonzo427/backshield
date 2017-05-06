@@ -135,6 +135,28 @@ extend as needed:
     display: block;
     margin: 0 auto;
     height: 52px; }
+  #header.scrolled #branding .black-bg #blue-rect {
+    height: 90px;
+    width: 160px;
+    background: #00aeef;
+    color: white;
+    top: -77px;
+    position: relative;
+    float: right;
+    font-family: 'Eurostile LT Pro', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.blue-triangle {
+  background: url(images/buy-now.png);
+  width: 213px;
+  height: 156px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation-delay: 1s; }
 
 /*=========== NAV ===============*/
 nav#menu {
@@ -155,7 +177,7 @@ nav#menu {
       text-decoration: underline; }
 
 /*========= FADE IN BG IMAGES ===== */
-.slide-1-bg, .slide-2-bg, .slide-3-bg, .slide-4-bg, .orange-triangle {
+.slide-1-bg, .slide-2-bg, .slide-3-bg, .slide-4-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -200,7 +222,8 @@ nav#menu {
   color: white;
   display: block;
   width: 36vw;
-  margin: 70vh 0 0 60px; }
+  margin: 70vh 0 0 60px;
+  animation-delay: 1s; }
   .intro h1, .intro h2 {
     color: white;
     font-family: 'Eurostile LT Pro', sans-serif;
@@ -229,33 +252,7 @@ nav#menu {
   top: 31vh;
   overflow: hidden;
   animation-delay: 1s;
-  /*  span{
-        color: white;
-        position: absolute;
-        display: flex;
-        width: 36vw;
-        margin: 30vh 0 0 60px;
-        flex-direction: column;
-    
-        h1, h2{
-            color: white;
-            font-family: 'Eurostile LT Pro', sans-serif;
-            font-size: 1.125em;
-            text-transform: uppercase;
-            font-weight: 100;
-            strong{
-                font-weight: 700;
-            }
-        }
-        h2{
-            font-size: 2em;
-        }
-        p{
-            font-size: .8em;
-            font-weight: 100;
-           
-        }
-    }*/ }
+  z-index: -1; }
   .orange-triangle:after {
     content: "";
     display: block;
@@ -263,15 +260,6 @@ nav#menu {
     height: 0;
     border-right: 60vw solid transparent;
     border-bottom: 70vh solid rgba(255, 107, 0, 0.8); }
-
-.blue-triangle {
-  background: url(images/buy-now.png);
-  width: 213px;
-  height: 156px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation-delay: 1s; }
 
 /*========== CONTENT ========*/
 .home_section {

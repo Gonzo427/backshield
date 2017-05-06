@@ -68,17 +68,35 @@
 				display: block;
 				margin: 0 auto;
 				height: 52px;
-	    		
-	    		a{
-	    			
-	    		}
+	    	}
+	    	#blue-rect{
+	    		height:90px;
+	    		width: 160px;
+	    		background: #00aeef;
+	    		color: white;
+	    		top: -77px;
+			    position: relative;
+			    float: right;
+			    font-family: 'Eurostile LT Pro', sans-serif;
+			    text-transform: uppercase;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
 	    	}
 	    }
     	
     }
 
 }
-
+.blue-triangle{
+    background: url(images/buy-now.png);
+    width: 213px;
+    height: 156px;
+    position: absolute;
+    top:0;
+    right: 0;
+    animation-delay: 1s;
+}
 
 /*=========== NAV ===============*/
 nav#menu{

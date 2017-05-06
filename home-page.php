@@ -27,14 +27,14 @@
 			    <div class="orange-triangle animated fadeInLeft"></div>
 			   
 			    <div class="slide-1">
-			    	<div class="intro animated fadeInLeft"  data-bottom="position:fixed;" data-center-bottom="position:absolute;">
+			    	<div class="intro animated fadeInLeft"  data-0="position:fixed;" data-20p="position:absolute;">
 				    	<h1><strong>Pain Free</strong> Driving</h1>
 						<h2>By Design</h2>
 						<p>BackShield is a back-support breakthrough: a patented, computer-aided design combined with next-generation materials to deliver hour after hour of comfort behind the wheel. </p>
 					</div>
 			    </div>
 			    <div class="slide-2">
-					<div class="intro" data-top="position:fixed;" data-100-top="position:absolute;">
+					<div class="intro" data-top="position:fixed;" data-top-bottom="position:absolute;">
 				    	<h1><strong>Pain Free</strong> Driving</h1>
 						<h2>By Design</h2>
 						<p>BackShield is a donec sed placerat enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ultrices sed nisi quis dignissim.  </p>

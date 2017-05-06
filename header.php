@@ -17,6 +17,7 @@
 		<div id="logo"  class="animated slideInDown"></div>
 		<div class="black-bg animated slideInDown">
 			<div id="sm-logo"  ></div>
+			<div id="blue-rect">Buy Now</div>
 		</div>
 	</a>
 

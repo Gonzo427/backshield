@@ -1,12 +1,10 @@
 jQuery(document).ready(function($) {
 
-    /* delay logo */
-
-
+ 
  /* shrink header */
   var shrinkHeader = 100;
   $(window).scroll(function() {
-      var scroll = getCurrentScroll();
+     var scroll = getCurrentScroll();
         
        if ( scroll >= shrinkHeader ) {
            $('#header').addClass('scrolled');
@@ -15,7 +13,20 @@ jQuery(document).ready(function($) {
             $('#header').removeClass('scrolled');
         }
 
+
+
     });
+
+   $(window).scroll(function() {
+  var scroll = getCurrentScroll();
+      /* CHANGE TRIANGLE COLOR */
+        
+        if(scroll>150){
+ 
+
+        }
+
+});
 
    function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
